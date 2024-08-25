@@ -1,7 +1,3 @@
-Here’s a sample README for the JavaScript code provided:
-
----
-
 # Secret Phrase and Account Management
 
 ## Overview
