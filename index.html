@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Based Wallet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wallet-container">
+        <h1>Web Wallet</h1>
+        <div class="phrase-section" id="phraseSection">
+            <h2>Generate Secret Phrase</h2>
+            <button id="generatePhraseBtn">Generate Secret Phrase</button>
+            <button id="confirmPhraseBtn" disabled>Confirm Secret Phrase</button>
+    </div>
+
+            <div id="secretPhraseContainer" class="phrase-container">
+               
+            <p>Yash Sharma</p> <p>E-Vault</p>
+        </div>
+        <div class="account-section" id="accountSection" style="display:none;">
+            <h2>My Accounts</h2>
+            <div id="accountsList"></div>
+            <select id="networkSelect">
+                <option value="solana">Solana</option>
+                <option value="ethereum">Ethereum</option>
+                <option value="polygon">Polygon</option>
+            </select>
+            <button id="createAccountBtn">Create New Account</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.wallet-container {
+    background: #2b2b2b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 500px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+/* Secret Phrase Styling */
+.phrase-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 10px;
+    margin: 20px 0;
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+#networkSelect {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.phrase-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: #1e1e1e;
+    border: 1px solid #555;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+}
+
+.phrase-box::before {
+    content: attr(data-index) ". ";
+    font-weight: normal;
+    margin-right: 8px;
+    color: #aaa;
+}
+
+/* Confirm Secret Phrase Button Styling */
+#confirmPhraseBtn {
+    margin-top: 20px; /* Ensure space between secret phrase and button */
+}
+
+#phraseSection {
+    margin-bottom: 20px;
+}
+
+#phraseSection button {
+    display: inline; /* Ensure button is displayed */
+}
+
+#accountSection {
+    display: contents;
+    overflow-y: auto;
+}
+
+
+#accountsList {
+    display: contents;
+    margin-top: 20px;
+    overflow-y: auto;
+}
+
+
+.account-item {
+    background: #444;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.hidden-key {
+    font-family: monospace;
+    color: #bbb;
+}
